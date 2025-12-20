@@ -1,0 +1,111 @@
+/* ===================================
+   AGUARÍO - Versión 3: Mixta Elegante  
+   Override Color Variables Only
+   =================================== */
+
+/* Import Base Styles & Structure */
+@import url("../version-1-verde-tierra/styles.css");
+
+/* Color Palette - Mixta Elegante (OVERRIDE) */
+:root {
+  /* Primary Colors - Mixed Palette */
+  --color-primary: #404a2b !important; /* Verde oscuro - Header */
+  --color-secondary: #8c6347 !important; /* Marrón rojizo - Botones principales */
+  --color-tertiary: #9f936a !important; /* Dorado tierra - Hover, Destacados */
+  --color-accent: #727d34 !important; /* Verde oliva - Acentos especiales */
+
+  /* Neutral Colors */
+  --color-background: #f0efe9 !important; /* Crema - Fondo principal */
+  --color-surface: #ddd9d0 !important; /* Beige - Cards */
+  --color-surface-alt: #fdded0 !important; /* Beige rosado - Secciones destacadas */
+
+  /* Text Colors */
+  --color-text-dark: #313628 !important; /* Verde muy oscuro */
+  --color-text-light: #f0efe9 !important; /* Crema claro */
+  --color-text-muted: #8c6347 !important; /* Marrón rojizo */
+
+  /* Gradients - Elegant Mix */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #404a2b 0%,
+    #5e4425 100%
+  ) !important;
+  --gradient-secondary: linear-gradient(
+    135deg,
+    #8c6347 0%,
+    #9f936a 100%
+  ) !important;
+  --gradient-accent: linear-gradient(
+    135deg,
+    #9f936a 0%,
+    #727d34 100%
+  ) !important;
+  --gradient-overlay: linear-gradient(
+    135deg,
+    rgba(64, 74, 43, 0.92) 0%,
+    rgba(94, 68, 37, 0.88) 100%
+  ) !important;
+  --gradient-glass: linear-gradient(
+    135deg,
+    rgba(159, 147, 106, 0.1) 0%,
+    rgba(114, 125, 52, 0.05) 100%
+  ) !important;
+}
+
+/* Mixed elegant sections */
+.section-cyan {
+  background: linear-gradient(
+    135deg,
+    #f0efe9 0%,
+    #fdded0 50%,
+    #ddd9d0 100%
+  ) !important;
+}
+
+.hero::before {
+  background-image: radial-gradient(
+      circle at 30% 50%,
+      rgba(159, 147, 106, 0.18) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 50%,
+      rgba(140, 99, 71, 0.12) 0%,
+      transparent 50%
+    ) !important;
+}
+
+.beneficiaries {
+  background: linear-gradient(135deg, #404a2b 0%, #5e4425 100%) !important;
+}
+
+.beneficiaries::before {
+  background-image: radial-gradient(
+      circle at 20% 80%,
+      rgba(159, 147, 106, 0.25) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(114, 125, 52, 0.15) 0%,
+      transparent 50%
+    ) !important;
+}
+
+/* Special accents for mixed version */
+.cta-button {
+  background: linear-gradient(135deg, #8c6347 0%, #9f936a 100%) !important;
+}
+
+.footer {
+  background: #5e4425 !important;
+}
+
+.value-card::before,
+.accordion-card:hover {
+  border-left-color: #9f936a !important;
+}
+
+.node-icon {
+  background: linear-gradient(135deg, #9f936a 0%, #8c6347 100%) !important;
+}

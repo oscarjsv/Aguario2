@@ -1,0 +1,81 @@
+/* ===================================
+   AGUARÍO - Versión 2: Cál
+
+ida Terrosa
+   Override Color Variables Only
+   =================================== */
+
+/* Import Base Styles & Structure */
+@import url("../version-1-verde-tierra/styles.css");
+
+/* Color Palette  - Cálida Terrosa (OVERRIDE) */
+:root {
+  /* Primary Colors */
+  --color-primary: #5e4425 !important; /* Marrón oscuro - Header, Footer */
+  --color-secondary: #8c6347 !important; /* Marrón rojizo - Botones, Acentos */
+  --color-tertiary: #796f21 !important; /* Ocre/dorado - Hover, Destacados */
+  --color-accent: #ac8163 !important; /* Marrón claro - Acentos especiales */
+
+  /* Neutral Colors */
+  --color-background: #f0efe9 !important; /* Crema - Fondo principal */
+  --color-surface: #ddd9d0 !important; /* Beige - Cards, Secciones */
+  --color-surface-alt: #fdded0 !important; /* Beige rosado claro */
+
+  /* Text Colors */
+  --color-text-dark: #5e4425 !important; /* Marrón oscuro */
+  --color-text-light: #f0efe9 !important; /* Crema claro */
+  --color-text-muted: #8c6347 !important; /* Marrón rojizo */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #5e4425 0%,
+    #8c6347 100%
+  ) !important;
+  --gradient-secondary: linear-gradient(
+    135deg,
+    #8c6347 0%,
+    #796f21 100%
+  ) !important;
+  --gradient-accent: linear-gradient(
+    135deg,
+    #796f21 0%,
+    #ac8163 100%
+  ) !important;
+  --gradient-overlay: linear-gradient(
+    135deg,
+    rgba(94, 68, 37, 0.95) 0%,
+    rgba(140, 99, 71, 0.9) 100%
+  ) !important;
+  --gradient-glass: linear-gradient(
+    135deg,
+    rgba(121, 111, 33, 0.1) 0%,
+    rgba(172, 129, 99, 0.05) 100%
+  ) !important;
+}
+
+/* Additional warm tones for sections */
+.section-cyan {
+  background: linear-gradient(135deg, #f0efe9 0%, #fdded0 100%) !important;
+}
+
+.hero::before {
+  background-image: radial-gradient(
+      circle at 30% 50%,
+      rgba(140, 99, 71, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 50%,
+      rgba(172, 129, 99, 0.1) 0%,
+      transparent 50%
+    ) !important;
+}
+
+.beneficiaries::before {
+  background-image: radial-gradient(
+    circle at 20% 80%,
+    rgba(121, 111, 33, 0.2) 0%,
+    transparent 50%
+  ) !important;
+}

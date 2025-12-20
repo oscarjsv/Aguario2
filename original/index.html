@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AGUARÍO - Gestión territorial inteligente y sostenible en Colombia. Del plan al impacto: proyectos que transforman.">
+    <title>AGUARÍO | Gestión Territorial Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header-content">
+            <img src="icon-aguario.png" alt="AGUARÍO" class="logo-image">
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Mobile Menu -->
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="#hero">Inicio</a>
+                <a href="#institutional-identity">Nosotros</a>
+                <a href="#services">Líneas de Acción</a>
+                <a href="#beneficiaries">Gestión</a>
+                <a href="#footer">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Gestión territorial que se ejecuta.</h1>
+            <p class="hero-subtitle">Fondo Mixto de Promoción y Gestión del Desarrollo Social y Territorial.
+                Estructuramos, articulamos y ejecutamos proyectos de punta a punta.</p>
+            <button class="cta-button"
+                onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'})">Conoce nuestras
+                líneas de acción</button>
+        </div>
+        <div class="wave-decoration wave-1"></div>
+        <div class="wave-decoration wave-2"></div>
+    </section>
+
+    <!-- Institutional Identity Section -->
+    <section class="institutional-identity section-white" id="institutional-identity">
+        <h2 class="section-title">Identidad Corporativa</h2>
+
+        <!-- Misión Subsection -->
+        <div class="identity-subsection">
+            <div class="subsection-header">
+                <div class="subsection-icon">🏔️</div>
+                <h3 class="subsection-title">Misión</h3>
+            </div>
+            <p class="subsection-text">
+                Promover y gestionar el <strong>desarrollo social y territorial sostenible</strong> en Colombia mediante
+                la estructuración, articulación y ejecución de proyectos integrales que transformen las necesidades del
+                territorio en soluciones técnicas, financiables y medibles, generando impacto positivo en las
+                comunidades y entidades gubernamentales.
+            </p>
+        </div>
+
+        <!-- Visión 2035 Subsection -->
+        <div class="identity-subsection">
+            <div class="subsection-header">
+                <div class="subsection-icon">👁️</div>
+                <h3 class="subsection-title">Visión 2035</h3>
+            </div>
+            <p class="subsection-text">
+                Ser el <strong>referente en gestión territorial</strong> en Colombia, reconocidos por nuestra capacidad
+                de convertir desafíos complejos en territorios sostenibles, resilientes e inteligentes, liderando la
+                transformación hacia un futuro donde la articulación institucional y la excelencia técnica sean pilares
+                del desarrollo nacional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Corporate Values Section -->
+    <section class="corporate-values section-cyan" id="corporate-values">
+        <h2 class="section-title">Valores Corporativos</h2>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">🔍</div>
+                <h4 class="value-title">Transparencia</h4>
+                <p class="value-description">Decisiones claras y procesos trazables en cada etapa del proyecto.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <h4 class="value-title">Impacto Social</h4>
+                <p class="value-description">Priorizamos el bienestar de las comunidades y el cierre de brechas
+                    territoriales.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">⚙️</div>
+                <h4 class="value-title">Excelencia Técnica</h4>
+                <p class="value-description">Soluciones basadas en estándares internacionales y conocimiento
+                    especializado.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🌱</div>
+                <h4 class="value-title">Sostenibilidad</h4>
+                <p class="value-description">Proyectos que equilibran desarrollo económico, social y ambiental.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🔗</div>
+                <h4 class="value-title">Articulación</h4>
+                <p class="value-description">Conectamos actores públicos y privados para maximizar resultados.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">💡</div>
+                <h4 class="value-title">Innovación</h4>
+                <p class="value-description">Incorporamos tecnologías emergentes y metodologías de vanguardia.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">📊</div>
+                <h4 class="value-title">Rigor Metodológico</h4>
+                <p class="value-description">Gestión de proyectos con métricas claras y seguimiento continuo.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🌍</div>
+                <h4 class="value-title">Compromiso Territorial</h4>
+                <p class="value-description">Profundo entendimiento de las realidades locales y regionales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-prop section-cyan" id="value-prop">
+        <h2 class="section-title">¿Por qué Aguarío?</h2>
+
+        <div class="value-diagram">
+            <div class="diagram-node node-start">
+                <div class="node-icon chaos-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" />
+                    </svg>
+                </div>
+                <h3>El Desafío Actual</h3>
+                <p>La brecha entre necesidades del territorio y proyectos ejecutables. La dispersión institucional y
+                    falta de articulación dificultan el desarrollo efectivo.</p>
+            </div>
+
+            <div class="diagram-arrow">
+                <div class="arrow-line"></div>
+                <div class="arrow-label">Articulación Aguarío</div>
+                <div class="arrow-head"></div>
+            </div>
+
+            <div class="diagram-node node-end">
+                <div class="node-icon smart-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M9 9h6M9 12h6M9 15h3" />
+                    </svg>
+                </div>
+                <h3>Nuestra Respuesta</h3>
+                <p>Gestión integral. Convertimos necesidades en proyectos técnicos, financiables y medibles. Articulamos
+                    actores públicos y privados para resultados tangibles.</p>
+            </div>
+        </div>
+
+        <div class="value-highlights">
+            <div class="highlight-card">
+                <div class="highlight-icon">🔍</div>
+                <h3>Transparencia</h3>
+                <p>Procesos claros y trazables en cada etapa del proyecto</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🌉</div>
+                <h3>Cierre de Brechas</h3>
+                <p>Conectando necesidades con soluciones efectivas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-white" id="services">
+        <h2 class="section-title">Líneas de Acción</h2>
+
+        <div class="accordion-container">
+            <div class="accordion-card" data-card="1">
+                <div class="accordion-header">
+                    <div class="accordion-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18M5 21V7l8-4v18M19 21V10l-6-3" />
+                            <path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01" />
+                        </svg>
+                    </div>
+                    <h3>Infraestructura y Obras</h3>
+                    <div class="accordion-toggle">+</div>
+                </div>
+                <div class="accordion-content">
+                    <p>Desarrollo y gestión integral de proyectos de infraestructura civil y sanitaria que transforman
+                        territorios y mejoran la calidad de vida.</p>
+                    <ul>
+                        <li>Proyectos de ingeniería civil y sanitaria</li>
+                        <li>Planeación, diseño y construcción de vías, puentes y redes</li>
+                        <li>Interventoría técnica especializada</li>
+                        <li>Infraestructura resiliente y sostenible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-card" data-card="2">
+                <div class="accordion-header">
+                    <div class="accordion-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                            <circle cx="12" cy="12" r="1" />
+                        </svg>
+                    </div>
+                    <h3>Territorios Inteligentes y Movilidad</h3>
+                    <div class="accordion-toggle">+</div>
+                </div>
+                <div class="accordion-content">
+                    <p>Implementación de tecnologías 4RI (Cuarta Revolución Industrial) para crear ciudades
+                        inteligentes, conectadas y eficientes.</p>
+                    <ul>
+                        <li>Gestión territorial basada en IoT y datos</li>
+                        <li>Gobernanza de datos territoriales</li>
+                        <li>Movilidad sostenible y semaforizaçión inteligente</li>
+                        <li>Plataformas de análisis urbano en tiempo real</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-card" data-card="3">
+                <div class="accordion-header">
+                    <div class="accordion-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Energía y Eficiencia</h3>
+                    <div class="accordion-toggle">+</div>
+                </div>
+                <div class="accordion-content">
+                    <p>Proyectos de eficiencia energética, autogeneración y energías renovables que reducen costos
+                        operativos y la huella de carbono.</p>
+                    <ul>
+                        <li>Eficiencia energética en edificaciones públicas</li>
+                        <li>Autogeneración solar y eólica</li>
+                        <li>Alumbrado público conectado e inteligente</li>
+                        <li>Optimización de consumo energético</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-card" data-card="4">
+                <div class="accordion-header">
+                    <div class="accordion-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <path d="M7.5 4.21l4.5 2.6 4.5-2.6m-9 15.58V14.6L3 12m18 0l-4.5 2.6v5.19" />
+                        </svg>
+                    </div>
+                    <h3>Ambiente y Economía Circular</h3>
+                    <div class="accordion-toggle">+</div>
+                </div>
+                <div class="accordion-content">
+                    <p>Gestión ambiental integral y modelos de economía circular que generan valor mientras protegen
+                        ecosistemas.</p>
+                    <ul>
+                        <li>Estudios de impacto ambiental</li>
+                        <li>Gestión de licenciamientos ambientales</li>
+                        <li>Educación ambiental y participación comunitaria</li>
+                        <li>Gestión del riesgo y modelos de economía circular</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficiaries Section -->
+    <section class="beneficiaries" id="beneficiaries">
+        <h2 class="beneficiaries-title">Impacto Directo</h2>
+
+        <div class="beneficiaries-grid">
+            <div class="beneficiary-block">
+                <div class="beneficiary-header">
+                    <div class="beneficiary-icon">👥</div>
+                    <h3 class="beneficiary-title">Comunidad General</h3>
+                </div>
+                <p class="beneficiary-text">
+                    Beneficiaria final de proyectos de infraestructura sostenible, servicios públicos mejorados y
+                    espacios territoriales más habitables. Generamos desarrollo social tangible que eleva la calidad de
+                    vida, crea oportunidades económicas y fortalece el tejido comunitario a través de soluciones
+                    ambientalmente responsables.
+                </p>
+            </div>
+
+            <div class="beneficiary-block">
+                <div class="beneficiary-header">
+                    <div class="beneficiary-icon">🏛️</div>
+                    <h3 class="beneficiary-title">Entidades Territoriales</h3>
+                </div>
+                <p class="beneficiary-text">
+                    Proveemos soporte integral a municipios y gobernaciones en la estructuración, financiación y
+                    ejecución de proyectos complejos. Actuamos como socio estratégico que articula recursos públicos y
+                    privados, asegura cumplimiento normativo y técnico, y acelera la materialización de planes de
+                    desarrollo territorial con métricas claras de impacto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-legal">
+                <p class="legal-name">FONDO MIXTO DE PROMOCIÓN Y GESTIÓN DEL DESARROLLO SOCIAL Y TERRITORIAL – AGUARÍO
+                    S.A.S.</p>
+            </div>
+
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span>Barranquilla, Atlántico</span>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                    <span>CL 95 No 47 – 143</span>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="M3 7l9 6 9-6" />
+                    </svg>
+                    <a href="mailto:fondomixtodepromocionaguario@gmail.com"
+                        style="color: inherit; text-decoration: none;">fondomixtodepromocionaguario@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span><a href="tel:+573102791126" style="color: inherit; text-decoration: none;">310 279 1126</a> /
+                        <a href="tel:+573045244586" style="color: inherit; text-decoration: none;">304 524
+                            4586</a></span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGUARÍO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

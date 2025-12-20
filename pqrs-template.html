@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PQRS - Peticiones, Quejas, Reclamos y Sugerencias | AGUARÍO S.A.S.">
+    <title>PQRS | AGUARÍO - Gestión Territorial Sostenible</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/shared/base.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo/icon-aguario.png">
+</head>
+
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header-content">
+            <img src="../assets/images/logo/icon-aguario.png" alt="AGUARÍO" class="logo-image">
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html#services" class="nav-link">Servicios</a>
+                <a href="index.html#about" class="nav-link">Nosotros</a>
+                <a href="pqrs.html" class="nav-link active">PQRS</a>
+                <a href="#contacto" class="nav-link nav-link-cta">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PQRS Hero Section -->
+    <section class="pqrs-hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="pqrs-hero-content fade-in">
+                <div class="icon-wrapper float">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        <line x1="9" y1="10" x2="15" y2="10"></line>
+                        <line x1="12" y1="7" x2="12" y2="13"></line>
+                    </svg>
+                </div>
+                <h1 class="pqrs-title">Tu Opinión Nos Importa</h1>
+                <p class="pqrs-subtitle">Peticiones, Quejas, Reclamos y Sugerencias</p>
+                <p class="pqrs-description">
+                    En AGUARÍO valoramos tu retroalimentación. Este canal oficial te permite comunicarte
+                    con nosotros de manera directa, transparente y eficiente.
+                </p>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+                <path
+                    d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- PQRS Form Section -->
+    <section class="pqrs-form-section">
+        <div class="container container-narrow">
+
+            <!-- Info Cards -->
+            <div class="info-cards grid grid-3">
+                <div class="info-card card scale-in" style="animation-delay: 100ms;">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Respuesta Oportuna</h3>
+                    <p>Te responderemos en máximo 15 días hábiles</p>
+                </div>
+
+                <div class="info-card card scale-in" style="animation-delay: 200ms;">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Confidencial</h3>
+                    <p>Tu información está protegida y segura</p>
+                </div>
+
+                <div class="info-card card scale-in" style="animation-delay: 300ms;">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Seguimiento</h3>
+                    <p>Recibirás un número de radicado</p>
+                </div>
+            </div>
+
+            <!-- Main Form -->
+            <div class="form-container glass-card reveal">
+                <div class="form-header">
+                    <h2>Envíanos tu Mensaje</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo</p>
+                </div>
+
+                <form id="pqrsForm" class="pqrs-form">
+
+                    <!-- Tipo de Solicitud -->
+                    <div class="form-group">
+                        <label for="tipo" class="form-label">
+                            <span class="label-text">Tipo de Solicitud</span>
+                            <span class="required">*</span>
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="tipo" name="tipo" required class="form-input">
+                                <option value="">Selecciona una opción</option>
+                                <option value="peticion">Petición</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="felicitacion">Felicitación</option>
+                            </select>
+                            <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Nombre Completo -->
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">
+                            <span class="label-text">Nombre Completo</span>
+                            <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="nombre" name="nombre" class="form-input"
+                                placeholder="Ej: Juan Pérez García" required minlength="3">
+                        </div>
+                    </div>
+
+                    <!-- Grid: Email & Teléfono -->
+                    <div class="form-grid">
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <span class="label-text">Correo Electrónico</span>
+                                <span class="required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+
+                        <!-- Teléfono -->
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">
+                                <span class="label-text">Teléfono</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <input type="tel" id="telefono" name="telefono" class="form-input"
+                                    placeholder="+57 300 123 4567" pattern="[0-9+\s\-()]*">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Asunto -->
+                    <div class="form-group">
+                        <label for="asunto" class="form-label">
+                            <span class="label-text">Asunto</span>
+                            <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="2" x2="12" y2="6"></line>
+                                <line x1="12" y1="18" x2="12" y2="22"></line>
+                                <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                                <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                                <line x1="2" y1="12" x2="6" y2="12"></line>
+                                <line x1="18" y1="12" x2="22" y2="12"></line>
+                                <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                                <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                            </svg>
+                            <input type="text" id="asunto" name="asunto" class="form-input"
+                                placeholder="Breve descripción del tema" required minlength="5">
+                        </div>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">
+                            <span class="label-text">Mensaje</span>
+                            <span class="required">*</span>
+                            <span class="char-count">0 / 1000</span>
+                        </label>
+                        <textarea id="mensaje" name="mensaje" class="form-input"
+                            placeholder="Describe detalladamente tu petición, queja, reclamo o sugerencia..." required
+                            minlength="20" maxlength="1000" rows="6"></textarea>
+                    </div>
+
+                    <!-- Términos y Condiciones -->
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">
+                                Acepto la <a href="#" class="link-underline">Política de Privacidad</a> y
+                                el tratamiento de mis datos personales conforme a la Ley 1581 de 2012
+                                <span class="required">*</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                            </svg>
+                            Limpiar
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Enviar Solicitud
+                        </button>
+                    </div>
+
+                    <!-- Success Message (Hidden) -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>¡Solicitud Enviada!</h3>
+                        <p>Tu número de radicado es: <strong id="radicado"></strong></p>
+                        <p>Te contactaremos en los próximos 15 días hábiles</p>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="additional-info reveal">
+                <div class="info-box">
+                    <h3>Otros Canales de Contacto</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <strong>Email:</strong>
+                                <a href="mailto:contacto@aguario.com.co">contacto@aguario.com.co</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <strong>Teléfono:</strong>
+                                <a href="tel:+573001234567">+57 300 123 4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <strong>Dirección:</strong>
+                                <span>Bogotá, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../assets/images/logo/icon-aguario.png" alt="AGUARÍO" class="footer-logo">
+                    <p class="footer-text">Gestión Territorial Sostenible</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: contacto@aguario.com.co</p>
+                    <p>Tel: +57 300 123 4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#services">Servicios</a>
+                    <a href="pqrs.html">PQRS</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGUARÍO S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pqrs-script.js"></script>
+
+</body>
+
+</html>
