@@ -396,12 +396,19 @@ body {
 /* Valores Corporativos Grid */
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr; /* Mobile: 1 columna */
   gap: var(--spacing-md);
   margin-top: var(--spacing-lg);
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Tablet: 2 columnas */
+@media (min-width: 640px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .value-card {
@@ -963,7 +970,7 @@ body {
   }
 
   .values-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columnas */
   }
 
   .beneficiaries-grid {
