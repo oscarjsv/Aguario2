@@ -87,12 +87,16 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   z-index: 1000;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  background: rgba(255, 255, 255, 0.75);
-  border-bottom: 1px solid rgba(0, 95, 115, 0.1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
 }
 
 .header-content {
@@ -200,7 +204,7 @@ body {
     var(--primary-warm) 50%,
     var(--green-olive) 100%
   );
-  background-image: url("C:/Users/gumba/.gemini/antigravity/brain/9776db2d-38d4-4039-9bbc-d10bab80714d/aguario_hero_background_1766109431151.png");
+  background-image: url("./assets/images/hero-background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1035,5 +1039,22 @@ body {
   * {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* ===== RESPONSIVE - MOBILE ===== */
+@media (max-width: 768px) {
+  /* Tarjetas de valores en 1 columna en mobile */
+  .value-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  /* Asegurar que el contenido respire en mobile */
+  .highlight-card {
+    padding: var(--spacing-md);
+  }
+
+  .highlight-icon {
+    font-size: 2rem;
   }
 }

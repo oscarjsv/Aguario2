@@ -54,13 +54,33 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Parallax effect for hero section (subtle)
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset;
-  const hero = document.querySelector(".hero");
+// Header hide/show on scroll
+let lastScrollY = window.pageYOffset;
+const header = document.querySelector("header");
 
-  if (hero && scrolled < window.innerHeight) {
-    hero.style.backgroundPositionY = scrolled * 0.5 + "px";
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.pageYOffset;
+
+  // Only hide header if scrolled down more than 100px
+  if (currentScrollY > 100) {
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down - hide header
+      header.classList.add("hidden");
+    } else {
+      // Scrolling up - show header
+      header.classList.remove("hidden");
+    }
+  } else {
+    // Near top - always show header
+    header.classList.remove("hidden");
+  }
+
+  lastScrollY = currentScrollY;
+
+  // Parallax effect for hero section (subtle)
+  const hero = document.querySelector(".hero");
+  if (hero && currentScrollY < window.innerHeight) {
+    hero.style.backgroundPositionY = currentScrollY * 0.5 + "px";
   }
 });
 
