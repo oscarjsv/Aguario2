@@ -109,3 +109,33 @@
 .node-icon {
   background: linear-gradient(135deg, #9f936a 0%, #8c6347 100%) !important;
 }
+
+/* Value Proposition - Adapted to Mixta Elegante Palette */
+.chaos-icon {
+  background: linear-gradient(135deg, #8c6347 0%, #9f936a 100%) !important;
+}
+
+.smart-icon {
+  background: linear-gradient(135deg, #727d34 0%, #9f936a 100%) !important;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, #404a2b 0%, #8c6347 100%) !important;
+  box-shadow: 0 8px 25px rgba(64, 74, 43, 0.25) !important;
+}
+
+.highlight-card:hover {
+  box-shadow: 0 12px 35px rgba(64, 74, 43, 0.35) !important;
+}
+
+.arrow-line {
+  background: linear-gradient(to bottom, #404a2b, #9f936a) !important;
+}
+
+.arrow-label {
+  background: #9f936a !important;
+}
+
+.arrow-head {
+  border-top-color: #9f936a !important;
+}

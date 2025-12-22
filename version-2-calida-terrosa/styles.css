@@ -79,3 +79,25 @@ ida Terrosa
     transparent 50%
   ) !important;
 }
+
+/* Value Proposition - Adapted to Cálida Terrosa Palette */
+.chaos-icon {
+  background: linear-gradient(135deg, #8c6347 0%, #ac8163 100%) !important;
+}
+
+.smart-icon {
+  background: linear-gradient(135deg, #796f21 0%, #ac8163 100%) !important;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, #5e4425 0%, #8c6347 100%) !important;
+  box-shadow: 0 8px 25px rgba(94, 68, 37, 0.25) !important;
+}
+
+.highlight-card:hover {
+  box-shadow: 0 12px 35px rgba(94, 68, 37, 0.35) !important;
+}
+
+.arrow-line {
+  background: linear-gradient(to bottom, #5e4425, #796f21) !important;
+}
