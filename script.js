@@ -54,11 +54,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Header hide/show on scroll
+// Header hide/show on scroll with debouncing
 let lastScrollY = window.pageYOffset;
 const header = document.querySelector("header");
 
-window.addEventListener("scroll", () => {
+// Debounce function for performance
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+// Scroll handler
+function handleScroll() {
   const currentScrollY = window.pageYOffset;
 
   // Only hide header if scrolled down more than 100px
@@ -82,6 +96,11 @@ window.addEventListener("scroll", () => {
   if (hero && currentScrollY < window.innerHeight) {
     hero.style.backgroundPositionY = currentScrollY * 0.5 + "px";
   }
+}
+
+// Apply debounced scroll handler with passive listener
+window.addEventListener("scroll", debounce(handleScroll, 10), {
+  passive: true,
 });
 
 // Intersection Observer for fade-in animations
